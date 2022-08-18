@@ -1,0 +1,9 @@
+.design{
+    padding: 5px;
+    margin: 2rem;
+    color:white;
+    background-color: rgb(250, 84, 84);
+    outline: auto;
+    border: 3px solid rgb(83, 80, 80);
+    border-radius: 5px;
+}

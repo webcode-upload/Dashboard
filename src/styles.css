@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("../node_modules/bootstrap/dist/css/bootstrap.css");
+@import url("../node_modules/bootstrap/fa/css/all.css");
+
+/* import * from 'jquery';*/
+
+.navbar-default .navbar-brand {
+    color:rgb(199, 195, 195);
+    font-size:19px;    
+}
+
+
+.navbar li{
+    font-size:17px;    
+}
+
+.navbar-default .navbar-nav > li > a {
+    color:whitesmoke;
+}
+
+
+.navbar-default {
+
+    background-color: #17538b;
+    border-color: none !important;
+}
