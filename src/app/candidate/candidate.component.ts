@@ -13,7 +13,7 @@ export class CandidateComponent implements OnInit {
   name:string;
   searchname:any;
  page = 1;
-  handlePageChange(event) {
+  handlePageChange(event:any) {
     this.page = event;
   }
 
@@ -55,6 +55,8 @@ export class CandidateComponent implements OnInit {
 
   }
 
+
+
   delete(i:number)
   {
     if(confirm("You want to delete ?")){
@@ -62,6 +64,8 @@ export class CandidateComponent implements OnInit {
     }  
   }
 
+
+  
 
   delete1(i:number)
   {

@@ -22,7 +22,7 @@
               
         <div class="col-md-8">     
             <label for="search"></label>
-           <input type="text" class="form-control"  placeholder="search here"  autocomplete="off" [(ngModel)]="searchname" (ngModelChange)="search()">
+           <input type="text" class="form-control"  placeholder="search here"  autocomplete="off" [(ngModel)]="searchname">
           
                 <br>
             <table class="table table-bordered table-hover">
@@ -39,11 +39,9 @@
                     </tr>
                 </thead>
                 <tbody>
-             
-            <!-- <tr *ngFor="let x of members | filter:searchname | paginate : {itemsPerPage:10, currentPage:p} ; let i=index"> -->
- <tr *ngFor="let x of members | filter:searchname | paginate: { itemsPerPage:10, currentPage: page,totalItems: count}; let i=index">         
-              
-                      <td><input type="checkbox" [checked]="checks"></td>
+          
+         <tr *ngFor="let x of members | paginate: { itemsPerPage:10, currentPage: page} | filter:searchname; let i=index;">         
+               <td><input type="checkbox" [checked]="checks"></td>
                        <td>{{x.name}}</td>
                         <td>{{x.email}}</td>
                         <td>{{x.role}}</td>
